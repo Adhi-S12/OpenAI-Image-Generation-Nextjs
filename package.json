@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lottiefiles/lottie-player": "^1.6.2",
     "next": "13.0.6",
+    "openai": "^3.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   }

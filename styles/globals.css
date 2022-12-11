@@ -4,6 +4,9 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #ffffff;
+  color: #000080;
+  line-height: 1.5;
 }
 
 a {
@@ -11,16 +14,58 @@ a {
   text-decoration: none;
 }
 
+
+label {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+input,
+select,
+button {
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1.05rem;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  background-color: rgb(92, 163, 16);
+  color: #fff;
+  font-size: 1.05rem;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
 * {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 950px) {
+  .homepage {
+    flex-direction: column;
   }
-  body {
-    color: white;
-    background: black;
+
+  button {
+    width: 75%;
   }
 }
