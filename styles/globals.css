@@ -1,71 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*,
+*::after,
+*::before {
+	font-family: 'Sofia Sans', sans-serif;
+	box-sizing: border-box;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #ffffff;
-  color: #000080;
-  line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	background-color: #ffffff;
+	color: #000080;
+	line-height: 1.5;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
-
 label {
-  text-transform: capitalize;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  font-style: italic;
+	text-transform: capitalize;
+	font-size: 1.4rem;
+	margin-bottom: 1rem;
+	width: 100%;
+	text-align: center;
 }
 
 input,
 select,
 button {
-  padding: 5px 10px;
-  outline: none;
-  border-radius: 5px;
-  font-size: 1.05rem;
-  width: 100%;
+	padding: 10px 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.05rem;
+	width: 100%;
 }
 
 button {
-  cursor: pointer;
-  background-color: rgb(92, 163, 16);
-  color: #fff;
-  font-size: 1.05rem;
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-}
-
-* {
-  box-sizing: border-box;
+	cursor: pointer;
+	background-color: rgb(92, 163, 16);
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 1.4rem;
 }
 
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 .homepage {
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  align-items: center;
-  gap: 1rem;
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	align-items: center;
+	gap: 1rem;
 }
 
 @media screen and (max-width: 950px) {
-  .homepage {
-    flex-direction: column;
-  }
+	.homepage {
+		flex-direction: column;
+	}
 
-  button {
-    width: 75%;
-  }
+	button {
+		width: 75%;
+	}
 }
